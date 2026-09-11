@@ -138,5 +138,16 @@ class TerminalFlowTests(unittest.TestCase):
         self.assertEqual(opened_urls, ["https://example.com/a"])
 
 
+class RepositorySmokeTests(unittest.TestCase):
+    def test_repository_has_five_populated_stages(self):
+        root = Path(__file__).resolve().parents[1]
+
+        stages, warnings = learn.load_stages(root)
+
+        self.assertEqual(len(stages), 5)
+        self.assertGreater(sum(len(stage.tasks) for stage in stages), 0)
+        self.assertEqual(warnings, [])
+
+
 if __name__ == "__main__":
     unittest.main()
