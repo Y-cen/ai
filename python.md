@@ -57,8 +57,8 @@ Install Package
 ### 六、Built-Ins & Math (7 题)
 - [x] 44. Zipped!
 - [x] 45. Input()
-- [ ] 46. Python Evaluation
-- [ ] 47. Any or All
-- [ ] 48. Integers Come In All Sizes
-- [ ] 49. Power - Mod Power
-- [ ] 50. Map and Lambda Function
+- [x] 46. Python Evaluation
+- [x] 47. Any or All
+- [x] 48. Integers Come In All Sizes
+- [x] 49. Power - Mod Power
+- [x] 50. Map and Lambda Function
